@@ -2,14 +2,14 @@
 #include <cmath>
 
 float angle = 0.0f;
-float rotation_center_x = 1.0f;
-float rotation_center_y = 7.0f;
+float rotation_center_x = 0.0f;
+float rotation_center_y = 5.0f;
 
 // Titik A dan B
 // NIM 12871 A(1,7) B(8,2)
-float x1 = 1.0f;
-float y1 = 7.0f;
-float x2 = 8.0f;
+float x1 = 0.0f;
+float y1 = 5.0f;
+float x2 = 6.0f;
 float y2 = 2.0f;
 
 void display() {
@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(800, 800);
-    glutCreateWindow("Rotation in OpenGL with Points A(1,7) and B(8,2)");
+    glutCreateWindow("Rotation in OpenGL with Points A(0,5) and B(6,2)");
 
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
